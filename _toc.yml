@@ -1,10 +1,9 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
+# Inhoud
 
 format: jb-book
 root: docs/introductie.md
 chapters:
-  - file: docs/dataset-preprocessing.md
+  - file: docs/dataset-voorbewerking.md
   - file: notebooks/story.ipynb
-  - file: docs/reflection.md
-  - file: docs/work-distribution.md
+  - file: docs/reflectie.md
+  - file: docs/work-verdeling.md
