@@ -2,7 +2,7 @@
 
 [Click here to view the data story](https://p-adema.github.io/info-vis/)
 
-# Information Visualisation
+# Information Visualisation Gamen of Blokken
 
 Jupyter Book waarin het gamegedrag en de studieprestaties van studenten worden gevisualiseerd,
 gebaseerd op verschillende datasets. Voor meer informatie over de bronnen en het opschonen van de data,
@@ -10,7 +10,7 @@ zie de pagina [Dataset en Voorbewerking](./docs/dataset-preprocessing.md).
 
 # Inhoudsopgave
 
-- [Information Visualisation: Gaming & Studie](#information-visualisation-gaming--studie)
+- [Information Visualisation: Gamen of Blokken](#information-visualisation-gamem-of-blokken)
 - [Inhoudsopgave](#inhoudsopgave)
 - [Aan de slag](#aan-de-slag)
 - [Structuur](#structuur)
