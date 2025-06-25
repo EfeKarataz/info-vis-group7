@@ -8,7 +8,7 @@
 
 .bd-article-container h1,
 .bd-article-container h2 {
-  color: #343a42;
+  color: #2e3d49;
 }
 
 nav.bd-links {
@@ -16,7 +16,7 @@ nav.bd-links {
 }
 
 .toc-entry a.nav-link.active {
-  border-left-color: #fcab36;
+  border-left-color: #2ca8a0;
 }
 
 a,
@@ -30,19 +30,19 @@ nav.bd-links .active:focus > a,
 nav.bd-links .active > a,
 nav.bd-links li > a:hover,
 nav.bd-links li > a:focus {
-  color: #fcab36;
+  color: #2ca8a0;
 }
 
 code.literal {
-  background-color: #fdebd3;
-  color: #333a42;
-  border: 1px solid #d8bea1;
+  background-color: #e0f7f4;
+  color: #2e3d49;
+  border: 1px solid #a0d8d3;
 }
 
 .logo__image {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  border: 1px solid #d8bea1;
+  border: 1px solid #a0d8d3;
 }
 
 @media (min-width: 992px) {
