@@ -355,7 +355,6 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#structuur">Structuur</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gebruik">Gebruik</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#publiceren">Publiceren</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-cleaning-scripts">Dataset cleaning scripts</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#auteurs">Auteurs</a></li>
 </ul>
 
@@ -370,7 +369,7 @@ document.write(`
                 <article class="bd-article">
                   
   <p><img alt="gender pay gap banner" src="static/images/banner.png?" /></p>
-<p><a class="reference external" href="https://p-adema.github.io/info-vis/">Click here to view the data story</a></p>
+<p><a class="reference external" href="https://efekarataz.github.io/info-vis-group7/docs/introductie.html">Klik hier om het dataverhaal te bekijken.</a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="information-visualisation-gamen-of-blokken">
 <h1>Information Visualisation Gamen of Blokken<a class="headerlink" href="#information-visualisation-gamen-of-blokken" title="Link to this heading">#</a></h1>
 <p>Jupyter Book waarin het gamegedrag en de studieprestaties van studenten worden gevisualiseerd,
@@ -392,7 +391,7 @@ zie de pagina <a class="reference internal" href="docs/dataset-voorbewerking.htm
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="aan-de-slag">
 <h1>Aan de slag<a class="headerlink" href="#aan-de-slag" title="Link to this heading">#</a></h1>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:EfeKarataz/Information-Visualization-Group-7.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/EfeKarataz/info-vis-group7.git
 <span class="nb">cd</span><span class="w"> </span>Information-Visualization-Group-7
 pip3<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 </pre></div>
@@ -413,11 +412,10 @@ pip3<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </
 ├── _build              # Jupyter build voor deployment
 ├── _config.yml         # Jupyter configuratie
 ├── _toc.yml            # Inhoudsopgave configuratie
-├── data                # Datasets en cleaning scripts
+├── data                # Datasets
 ├── docs                # Te publiceren bestanden via GitHub Pages
 ├── notebooks           # Alle notebooks met visualisaties
 ├── requirements.txt    # Projectafhankelijkheden
-├── scripts             # Scripts voor deployment of cleaning
 └── static              # Afbeeldingen, css, js
 </pre></div>
 </div>
@@ -431,12 +429,8 @@ staan in de <code class="docutils literal notranslate"><span class="pre">noteboo
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="publiceren">
 <h1>Publiceren<a class="headerlink" href="#publiceren" title="Link to this heading">#</a></h1>
-<p>Gebruik het script <code class="docutils literal notranslate"><span class="pre">./scripts/deploy.sh</span></code> om de site te publiceren via GitHub Pages. Dit bouwt het project
-en voegt metadata toe aan <code class="docutils literal notranslate"><span class="pre">story.ipynb</span></code> om inputcellen te verbergen.</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="dataset-cleaning-scripts">
-<h1>Dataset cleaning scripts<a class="headerlink" href="#dataset-cleaning-scripts" title="Link to this heading">#</a></h1>
-<p>Klik <a class="reference internal" href="#./scripts/cleaning/"><span class="xref myst">hier</span></a> om de scripts te bekijken die zijn gebruikt voor het opschonen van de datasets.</p>
+<p>Gebruik de commando’s <code class="docutils literal notranslate"><span class="pre">jupyter-book</span> <span class="pre">build</span> <span class="pre">.</span></code> en <code class="docutils literal notranslate"><span class="pre">ghp-import</span> <span class="pre">-n</span> <span class="pre">-p</span> <span class="pre">-f</span> <span class="pre">_build/html</span></code> om de site te publiceren via GitHub Pages.
+Dit bouwt het project en voegt automatisch de juiste HTML-output toe. Eventuele inputcellen kunnen worden verborgen via metadata in story.ipynb.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="auteurs">
 <h1>Auteurs<a class="headerlink" href="#auteurs" title="Link to this heading">#</a></h1>
@@ -500,7 +494,6 @@ en voegt metadata toe aan <code class="docutils literal notranslate"><span class
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#structuur">Structuur</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#gebruik">Gebruik</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#publiceren">Publiceren</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-cleaning-scripts">Dataset cleaning scripts</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#auteurs">Auteurs</a></li>
 </ul>
 

@@ -1,6 +1,6 @@
 ![gender pay gap banner](./static/images/banner.png?)
 
-[Click here to view the data story](https://p-adema.github.io/info-vis/)
+[Klik hier om het dataverhaal te bekijken.](https://efekarataz.github.io/info-vis-group7/docs/introductie.html)
 
 # Information Visualisation Gamen of Blokken
 
@@ -22,7 +22,7 @@ zie de pagina [Dataset en Voorbewerking](./docs/dataset-voorbewerking.md).
 # Aan de slag
 
 ```bash
-git clone git@github.com:EfeKarataz/Information-Visualization-Group-7.git
+git clone https://github.com/EfeKarataz/info-vis-group7.git
 cd Information-Visualization-Group-7
 pip3 install -r requirements.txt
 ```
@@ -43,11 +43,10 @@ Als je `jupyter` niet lokaal hebt, installeer dit dan met: `pip3 install jupyter
 ├── _build              # Jupyter build voor deployment
 ├── _config.yml         # Jupyter configuratie
 ├── _toc.yml            # Inhoudsopgave configuratie
-├── data                # Datasets en cleaning scripts
+├── data                # Datasets
 ├── docs                # Te publiceren bestanden via GitHub Pages
 ├── notebooks           # Alle notebooks met visualisaties
 ├── requirements.txt    # Projectafhankelijkheden
-├── scripts             # Scripts voor deployment of cleaning
 └── static              # Afbeeldingen, css, js
 ```
 
@@ -61,12 +60,8 @@ Het hoofdverhaal staat in `./notebooks/story.ipynb`. Andere visualisaties kun je
 
 # Publiceren
 
-Gebruik het script `./scripts/deploy.sh` om de site te publiceren via GitHub Pages. Dit bouwt het project
-en voegt metadata toe aan `story.ipynb` om inputcellen te verbergen.
-
-# Dataset cleaning scripts
-
-Klik [hier](./scripts/cleaning/) om de scripts te bekijken die zijn gebruikt voor het opschonen van de datasets.
+Gebruik de commando's `jupyter-book build .` en `ghp-import -n -p -f _build/html` om de site te publiceren via GitHub Pages.
+Dit bouwt het project en voegt automatisch de juiste HTML-output toe. Eventuele inputcellen kunnen worden verborgen via metadata in story.ipynb.
 
 # Auteurs
 - Efe Karataz
