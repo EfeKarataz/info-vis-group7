@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. Dataset en Voorbewerking &#8212; Gamen of Blokken</title>
+    <title>Dataset en Voorbewerking &#8212; Gamen of Blokken</title>
   
   
   
@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/notebook.css?v=6284870f" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/notebook.css?v=6bae82b4" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -182,7 +182,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Dataset en Voorbewerking</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Dataset en Voorbewerking</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notebooks/story.html">The salary gap in software development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reflectie.html">Reflection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="werk-verdeling.html">Werkverdeling</a></li>
@@ -339,7 +339,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>2. Dataset en Voorbewerking</h1>
+    <h1>Dataset en Voorbewerking</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -349,9 +349,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-en-beschrijvingen">2.1 Datasets en beschrijvingen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datakwaliteit">2.2 Datakwaliteit</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-voorberwerking">2.3 Data voorberwerking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-en-beschrijvingen">Datasets en beschrijvingen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datakwaliteit">Datakwaliteit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-voorberwerking">Data voorberwerking</a></li>
 </ul>
             </nav>
         </div>
@@ -364,9 +364,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="dataset-en-voorbewerking">
-<h1>2. Dataset en Voorbewerking<a class="headerlink" href="#dataset-en-voorbewerking" title="Link to this heading">#</a></h1>
+<h1>Dataset en Voorbewerking<a class="headerlink" href="#dataset-en-voorbewerking" title="Link to this heading">#</a></h1>
 <section id="datasets-en-beschrijvingen">
-<h2>2.1 Datasets en beschrijvingen<a class="headerlink" href="#datasets-en-beschrijvingen" title="Link to this heading">#</a></h2>
+<h2>Datasets en beschrijvingen<a class="headerlink" href="#datasets-en-beschrijvingen" title="Link to this heading">#</a></h2>
 <p>Om de onderzoeksvraag te beantwoorden, zijn drie datasets geanalyseerd. Deze bevatten informatie over studenten, hun gamegedrag, studiegedrag en prestaties. Denk aan speeltijd, voorbereiding op examens en cijfers. Dankzij deze variatie kunnen we het onderwerp vanuit verschillende invalshoeken bekijken. De drie datasets volgen hieronder.</p>
 <ol class="arabic simple">
 <li><p><em>Student Performance Factors</em></p></li>
@@ -394,7 +394,7 @@ identificeren die een positieve of negatieve invloed hebben op academisch succes
 </ul>
 </section>
 <section id="datakwaliteit">
-<h2>2.2 Datakwaliteit<a class="headerlink" href="#datakwaliteit" title="Link to this heading">#</a></h2>
+<h2>Datakwaliteit<a class="headerlink" href="#datakwaliteit" title="Link to this heading">#</a></h2>
 <p>We hebben alle datasets zorgvuldig gecontroleerd op de vijf kernaspecten van datakwaliteit:</p>
 <ul class="simple">
 <li><p>Nauwkeurigheid: Alle waarden in bijvoorbeeld Playing Hours en Playing Years vallen binnen logische grenzen (respectievelijk 0–5 uur en 0–4 jaar).</p></li>
@@ -405,7 +405,7 @@ identificeren die een positieve of negatieve invloed hebben op academisch succes
 </ul>
 </section>
 <section id="data-voorberwerking">
-<h2>2.3 Data voorberwerking<a class="headerlink" href="#data-voorberwerking" title="Link to this heading">#</a></h2>
+<h2>Data voorberwerking<a class="headerlink" href="#data-voorberwerking" title="Link to this heading">#</a></h2>
 <p>De drie datasets zijn ingeladen in Python met behulp van pandas. CSV-bestanden zijn geopend met pd.read_csv() en werden direct ingelezen in DataFrames. Daarnaast zijn categorische variabelen zijn omgezet naar numerieke schalen om statistische analyses mogelijk te maken, zoals het berekenen van gemiddelden en correlaties. Deze werden verwerkt met de visualisatietool plotly.</p>
 </section>
 </section>
@@ -474,9 +474,9 @@ identificeren die een positieve of negatieve invloed hebben op academisch succes
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-en-beschrijvingen">2.1 Datasets en beschrijvingen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datakwaliteit">2.2 Datakwaliteit</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-voorberwerking">2.3 Data voorberwerking</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-en-beschrijvingen">Datasets en beschrijvingen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datakwaliteit">Datakwaliteit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-voorberwerking">Data voorberwerking</a></li>
 </ul>
   </nav></div>
 
