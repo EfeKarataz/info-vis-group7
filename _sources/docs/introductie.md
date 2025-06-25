@@ -6,7 +6,7 @@ Dit onderzoeksproject richt zich op het verkennen van deze tweezijdige relatie t
 
 Aan de hand van statistische analyses en datavisualisaties wordt onderzocht in welke mate gamen samenhangt met studiegedrag en academische prestaties. Deze benadering omvat zowel beschrijvende statistiek als visuele representaties van de gegevens, waaronder boxplots en staafdiagrammen.
 
-[Click here to read the data story](../notebooks/story.ipynb)
+[Klik hier om het dataverhaal te bekijken](../notebooks/story.ipynb)
 
 **Auteurs**
 
