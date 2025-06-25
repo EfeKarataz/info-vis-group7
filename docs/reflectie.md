@@ -1,35 +1,11 @@
-# Reflection
+### Reflectie
 
-## Peer feedback
+Voor dit project onderzochten we als team de invloed van gamegedrag op studieprestaties, aan de hand van drie datasets. We leerden hoe we data konden combineren, opschonen en analyseren, en hoe we deze inzichten konden presenteren via visualisaties. Het project gaf ons de kans om onze vaardigheden in Python, dataverwerking en het vertellen van verhalen te verbeteren.
 
-On June 22th, 2023, our team J3 gathered with group R3 and R4 for peer feedback,
-where one group at a time pitched the work that has been done in the past 3
-weeks. After the pitch, the two other groups gave feedback on what has been done
-well, as well as things to improve on.
+Daarnaast verliep de samenwerking binnen de groep over het algemeen goed. Door de taken te verdelen op basis van individuele sterktes en regelmatig te overleggen, konden we efficiënt en doelgericht werken. Tegelijkertijd leerden we hoe belangrijk het is om elkaars werk goed te documenteren en duidelijke afspraken te maken om fouten en dubbel werk te voorkomen.
 
-The main compliments we received for the version we had at time was that our
-data story looked really well along with the fact that we hide our all
-codeblocks inside the story, which gives it the clean look it still has today.
+Daarentegen was een technische uitdaging het maken van interactieve visualisaties. Voor de meesten van ons was dit nieuw, en het kostte tijd om vertrouwd te raken met tools zoals Plotly. Ook het maken van de website kostte ook veel tijd. Door gebruik te maken van documentatie, tutorials en onderlinge hulp van de TAs, lukte het om deze visualisaties succesvol te integreren in ons dataverhaal. 
 
-Below is a list of the feedback provided from group R3 and R4, as well as the TAs:
-- Have a look at maturnity leave for women and see if that could be a reason why women are getting less paid than men
-- All graphs should have captions, as some of them still don't have one
-- Add a regression line for the "Gender Ratio of Position vs Pay Gap" graph
-- Add missing dataset-preprocessing, reflection, and work-distribution pages in the notebook
+De feedback van de TAs en medestudenten hielp ons om onze visualisaties en het verhaal duidelijker en sterker te maken. Ze gaven aan dat we voorzichtig moesten zijn met onze conclusies, omdat sommige datasets klein of niet representatief waren. Daardoor leerden we om onze bevindingen beter te onderbouwen en ons verhaal zorgvuldiger op te bouwen. Ook kregen we opmerkingen over de leesbaarheid van onze grafieken. Voorbeelden van de opmerkingen zijn of het type grafiek goed paste bij de gegevens, of de kleuren genoeg contrast hadden, en of de visualisatie de onderzoeksvraag goed ondersteunde. Deze punten sloten goed aan bij de ontwerpregels die we in de hoorcolleges hadden besproken. Daarnaast hebben we zelf kritisch gekeken naar onze visualisaties, met behulp van de ontwerpprincipes uit de colleges. We letten bijvoorbeeld op eenvoud, duidelijke communicatie richting het publiek en een goed gebruik van kleur en ruimte. Op basis hiervan hebben we sommige grafieken aangepast, onnodige onderdelen verwijderd en titels of labels verduidelijkt.
 
-Later on we as a team agreed all of this was proper feedback to work one. Right
-after the day of feedback we have implemented all of the above feedback.
-
-## Self-reflection
-
-If this project had lasted an additional week or two, the main idea we would
-seek to implement would be to create a unified model of salary based on the
-factors we analysed. Currently, every factor is analysed independently of the
-others. As such, any differences in compensation noted in the graph of one
-factor could result from the other three elements. To better understand how much
-of the pay gap results from discrimination, it would be best to combine the
-influences of every factor (adjusting expected salary not only on age or work
-experience but all four aspects simultaneously). This method can also be seen in
-many scientific articles (such as Boll & Lagemann, 2018) but is somewhat
-time-consuming. As such, we did not use it for this data story, but we would
-have liked to do so, given the opportunity.
+Concluderend zijn de belangrijkste lessen uit dit project het belang van een helder narratief, goede samenwerking en het vermogen om flexibel om te gaan met nieuwe uitdagingen. Deze ervaring heeft ons niet alleen inhoudelijk sterker gemaakt, maar ook in het samenwerken aan een project.
