@@ -1,6 +1,6 @@
 ![gender pay gap banner](./static/images/banner.png?)
 
-[Klik hier om het dataverhaal te bekijken.](https://efekarataz.github.io/info-vis-group7/docs/introductie.html)
+[Klik hier om het dataverhaal te bekijken](https://efekarataz.github.io/info-vis-group7/docs/introductie.html)
 
 # Information Visualisation Gamen of Blokken
 
