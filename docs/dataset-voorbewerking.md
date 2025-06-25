@@ -1,6 +1,6 @@
-### 2. Dataset en Voorbewerking
+### Dataset en Voorbewerking
 
-#### 2.1 Datasets en beschrijvingen
+#### Datasets en beschrijvingen
 
 Om de onderzoeksvraag te beantwoorden, zijn drie datasets geanalyseerd. Deze bevatten informatie over studenten, hun gamegedrag, studiegedrag en prestaties. Denk aan speeltijd, voorbereiding op examens en cijfers. Dankzij deze variatie kunnen we het onderwerp vanuit verschillende invalshoeken bekijken. De drie datasets volgen hieronder.
 
