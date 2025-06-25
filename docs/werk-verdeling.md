@@ -1,4 +1,4 @@
-### 7. Werkverdeling
+### Werkverdeling
 
 Om het project met succes te voltooien, hebben we de taken verdeeld op basis van de sterke punten van elk teamlid. Deze aanpak stelde ons in staat om de werklast efficiënt te beheren en een hoge kwaliteit te garanderen voor elk onderdeel van het project. Een deel van het proces is gezamenlijk uitgevoerd. Aan het begin hebben we samen de datasets verzameld en de projectproposal opgesteld. Hieronder volgt een overzicht van de verantwoordelijkheden die aan ieder teamlid zijn toegewezen:
 
