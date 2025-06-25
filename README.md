@@ -1,6 +1,6 @@
 ![gender pay gap banner](./static/images/banner.png?)
 
-[Click here to view the data story](https://p-adema.github.io/info-vis/)
+[Click here to view the data story](https://efekarataz.github.io/info-vis-group7/docs/introductie.html)
 
 # Information Visualisation Gamen of Blokken
 
@@ -22,7 +22,7 @@ zie de pagina [Dataset en Voorbewerking](./docs/dataset-voorbewerking.md).
 # Aan de slag
 
 ```bash
-git clone git@github.com:EfeKarataz/Information-Visualization-Group-7.git
+git clone [https://github.com/EfeKarataz/info-vis-group7](https://github.com/EfeKarataz/info-vis-group7.git)
 cd Information-Visualization-Group-7
 pip3 install -r requirements.txt
 ```
