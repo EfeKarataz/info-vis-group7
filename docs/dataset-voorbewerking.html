@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Dataset and preprocessing &#8212; Gamen of Blokken</title>
+    <title>2. Dataset en Voorbewerking &#8212; Gamen of Blokken</title>
   
   
   
@@ -58,8 +58,6 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/dataset-voorbewerking';</script>
     <script src="../_static/js/enforce-light-theme.js?v=9baa896a"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -184,10 +182,10 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Dataset and preprocessing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Dataset en Voorbewerking</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notebooks/story.html">The salary gap in software development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reflectie.html">Reflection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="werk-verdeling.html">Work distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="werk-verdeling.html">Werkverdeling</a></li>
 </ul>
 
     </div>
@@ -341,7 +339,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Dataset and preprocessing</h1>
+    <h1>2. Dataset en Voorbewerking</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -351,9 +349,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning">Cleaning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregations">Aggregations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-en-beschrijvingen">2.1 Datasets en beschrijvingen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datakwaliteit">2.2 Datakwaliteit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-voorberwerking">2.3 Data voorberwerking</a></li>
 </ul>
             </nav>
         </div>
@@ -365,68 +363,50 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="dataset-and-preprocessing">
-<h1>Dataset and preprocessing<a class="headerlink" href="#dataset-and-preprocessing" title="Link to this heading">#</a></h1>
-<p>At first, we decided that each team member has to find at least one dataset of
-interest with sufficient data from which at least two perspectives can be
-induced. During the first team call, every dataset was discussed along with
-possible correlations. In the end, we chose the 2014-2022 datasets from the
-<a class="reference external" href="https://insights.stackoverflow.com/survey">Stack Overflow Annual Developer Survey</a>,
-as these datasets have correlations that could be of use for a potential topic.
-After some brainstorming during team meetings, we decided to dive into the world
-of gender pay gaps, as the dataset contains sufficient variables that can be
-used for two perspectives.</p>
-<section id="cleaning">
-<h2>Cleaning<a class="headerlink" href="#cleaning" title="Link to this heading">#</a></h2>
-<p>Each Stack Overflow dataset contains at least some changes compared to other
-years, such as column renaming or structural changes. We had to go through two
-phases in order to clean everything properly. The first phase is where columns
-are renamed and restructured in order to merge them together. Columns have been
-manually merged by inspecting them one by one and merging the ones containing
-roughly the same name or content in terms of what they represent. Columns that
-were not of use were immediately excluded during this process.</p>
-<p>The second phase involves normalising the data. In general, this has been done
-by thoroughly inspecting the unique values for each column and combine values
-that represent similar meaning.</p>
-<p>Finally, we have decided to use parquet <code class="docutils literal notranslate"><span class="pre">.pq</span></code> as the file type for our final
-dataset. This allows us to specify the datatype for each column and decrease the
-overall file size of the final dataset with additional gzip compression. This
-resulted in a 7.2MB parquet file, rather than a 145MB CSV file.</p>
-<p>After all, a total of 955 columns spanning 9 datasets have been reduced to a
-single dataset containing 19 columns and 535,759 rows.</p>
-</section>
-<section id="variable-descriptions">
-<h2>Variable descriptions<a class="headerlink" href="#variable-descriptions" title="Link to this heading">#</a></h2>
-<p>In terms of variable type and measurement scale, the variables in the final
-dataset can be classified under several combinations:</p>
+  <section id="dataset-en-voorbewerking">
+<h1>2. Dataset en Voorbewerking<a class="headerlink" href="#dataset-en-voorbewerking" title="Link to this heading">#</a></h1>
+<section id="datasets-en-beschrijvingen">
+<h2>2.1 Datasets en beschrijvingen<a class="headerlink" href="#datasets-en-beschrijvingen" title="Link to this heading">#</a></h2>
+<p>Om de onderzoeksvraag te beantwoorden, zijn drie datasets geanalyseerd. Deze bevatten informatie over studenten, hun gamegedrag, studiegedrag en prestaties. Denk aan speeltijd, voorbereiding op examens en cijfers. Dankzij deze variatie kunnen we het onderwerp vanuit verschillende invalshoeken bekijken. De drie datasets volgen hieronder.</p>
+<ol class="arabic simple">
+<li><p><em>Student Performance Factors</em></p></li>
+</ol>
 <ul class="simple">
-<li><p>Continuous / Ratio variables: <code class="docutils literal notranslate"><span class="pre">YearsCode</span></code>, <code class="docutils literal notranslate"><span class="pre">YearsCodePro</span></code>, <code class="docutils literal notranslate"><span class="pre">Salary</span></code></p></li>
-<li><p>Discrete / Ordinal variables: <code class="docutils literal notranslate"><span class="pre">JobSat</span></code></p></li>
-<li><p>Discrete / Nominal variables: <code class="docutils literal notranslate"><span class="pre">Education</span></code>, <code class="docutils literal notranslate"><span class="pre">OrgSize</span></code>, <code class="docutils literal notranslate"><span class="pre">LastNewJob</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Employment</span></code>, <code class="docutils literal notranslate"><span class="pre">RespondentType</span></code>, <code class="docutils literal notranslate"><span class="pre">JobSeek</span></code>, <code class="docutils literal notranslate"><span class="pre">Gender</span></code>, <code class="docutils literal notranslate"><span class="pre">Student</span></code>, <code class="docutils literal notranslate"><span class="pre">Country</span></code>,
-<code class="docutils literal notranslate"><span class="pre">CodingActivities</span></code>, <code class="docutils literal notranslate"><span class="pre">DevType</span></code>, <code class="docutils literal notranslate"><span class="pre">LearnCodeFrom</span></code>, <code class="docutils literal notranslate"><span class="pre">LangPresent</span></code></p></li>
-<li><p>Discrete / Interval variables: <code class="docutils literal notranslate"><span class="pre">Year</span></code></p></li>
-<li><p>Discrete / Ratio variables: <code class="docutils literal notranslate"><span class="pre">Age</span></code></p></li>
+<li><p><em>Bron</em>: <a class="reference external" href="https://www.kaggle.com/datasets/lainguyn123/student-performance-factors/data">https://www.kaggle.com/datasets/lainguyn123/student-performance-factors/data</a></p></li>
+<li><p><em>Beschrijving</em>: Deze dataset heeft 6607 observaties en 20 variabelen. Deze dataset geeft een uitgebreid beeld van verschillende factoren die de
+schoolprestaties van studenten beïnvloeden. De dataset bevat informatie over studiegedrag, aanwezigheid op school, betrokkenheid van ouders en andere elementen die van invloed kunnen zijn op academisch succes. De belangrijkste variabelen in deze dataset zijn toegang tot internet, buitenschoolse activiteiten en examen score.</p></li>
 </ul>
-<p>Variables that are currently being used are: <code class="docutils literal notranslate"><span class="pre">Year</span></code>, <code class="docutils literal notranslate"><span class="pre">Salary</span></code>, <code class="docutils literal notranslate"><span class="pre">YearsCodePro</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Age</span></code>, <code class="docutils literal notranslate"><span class="pre">Education</span></code>, <code class="docutils literal notranslate"><span class="pre">RespondentType</span></code>, <code class="docutils literal notranslate"><span class="pre">Gender</span></code>, <code class="docutils literal notranslate"><span class="pre">Country</span></code> and <code class="docutils literal notranslate"><span class="pre">DevType</span></code>.</p>
+<ol class="arabic simple" start="2">
+<li><p><em>Student Performance Metrics Dataset</em></p></li>
+</ol>
+<ul class="simple">
+<li><p><em>Bron</em>: <a class="reference external" href="https://data.mendeley.com/datasets/5b82ytz489/1">https://data.mendeley.com/datasets/5b82ytz489/1</a></p></li>
+<li><p><em>Beschrijving</em>: Deze dataset heeft 493 observaties en bevat uitgebreide informatie over academische en niet-academische
+kenmerken van studenten in het hoger onderwijs. De dataset bevat onder andere de variabelen Gaming, Attendance en Preparation in ordinale categorieën zoals “0-1 Hour” en “More than 3 Hours”. Dit stelt ons in staat om verschillen in studiegedrag tussen studenten inzichtelijk te maken.</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p><em>Games and Success in Students</em></p></li>
+</ol>
+<ul class="simple">
+<li><p><em>Bron</em>: <a class="reference external" href="https://www.kaggle.com/datasets/deadier/play-games-and-success-in-students">https://www.kaggle.com/datasets/deadier/play-games-and-success-in-students</a></p></li>
+<li><p><em>Beschrijving</em>: Deze dataset bestaat uit 770 observaties met variabelen als Playing Hours (aantal uren gamen per dag), Playing Years (hoeveel jaar iemand al games speelt) en Playing Often (hoevaak iemand games speelt op een schaal van 0-5). Beide zijn beschikbaar en daarmee geschikt voor correlatieanalyse. Het doel van de dataset is om factoren te
+identificeren die een positieve of negatieve invloed hebben op academisch succes.</p></li>
+</ul>
 </section>
-<section id="aggregations">
-<h2>Aggregations<a class="headerlink" href="#aggregations" title="Link to this heading">#</a></h2>
-<p>In general, most aggregations happen for calculating the salary gap between men
-and women relative to men. This is done by taking the mean salary for both men
-and women, subtracting these means and finally divide the total by the mean
-salary for men. In mathematical notation, this is defined as:</p>
-<div class="math notranslate nohighlight">
-\[\textrm{SalaryGap} = \frac{S_{\textrm{man}} - S_{\textrm{woman}}}{S_{\textrm{man}}}\]</div>
-<p>In most graphs a percentage is being used, which is the above salary gap formula
-multiplied by 100.</p>
-<p><strong>Example:</strong> Let’s say in the Netherlands the average annual salary for men is
-€80,000 and for women €60,000. Then the salary gap will be 25% using
-the aforementioned calculation. If women are the ones making €80,000 per
-year and men make €60,000 per year, then the salary gap will be -33%. We
-call the percentage outcome a <em>male-favoured gap</em> if the percentage is positive.
-When the outcome is negative, it is considered a <em>female-favoured gap</em>.</p>
+<section id="datakwaliteit">
+<h2>2.2 Datakwaliteit<a class="headerlink" href="#datakwaliteit" title="Link to this heading">#</a></h2>
+<p>We hebben alle datasets zorgvuldig gecontroleerd op de vijf kernaspecten van datakwaliteit:</p>
+<ul class="simple">
+<li><p>Nauwkeurigheid: Alle waarden in bijvoorbeeld Playing Hours en Playing Years vallen binnen logische grenzen (respectievelijk 0–5 uur en 0–4 jaar).</p></li>
+<li><p>Validiteit: Categorische kolommen zoals Gaming, Preparation en Attendance bevatten alleen verwachte waarden zoals “0-1 Hour” of “80%-100%”.</p></li>
+<li><p>Volledigheid: Er zijn geen missende waarden in de kolommen die er gebruikt worden.</p></li>
+<li><p>Consistentie: De categorieën zijn gestandaardiseerd en waar nodig omgezet naar ordinale getallen om statistische verwerking mogelijk te maken.</p></li>
+<li><p>Uniqueness: Er zijn geen dubbele records binnen de gebruikte subsets.</p></li>
+</ul>
+</section>
+<section id="data-voorberwerking">
+<h2>2.3 Data voorberwerking<a class="headerlink" href="#data-voorberwerking" title="Link to this heading">#</a></h2>
+<p>De drie datasets zijn ingeladen in Python met behulp van pandas. CSV-bestanden zijn geopend met pd.read_csv() en werden direct ingelezen in DataFrames. Daarnaast zijn categorische variabelen zijn omgezet naar numerieke schalen om statistische analyses mogelijk te maken, zoals het berekenen van gemiddelden en correlaties. Deze werden verwerkt met de visualisatietool plotly.</p>
 </section>
 </section>
 
@@ -494,9 +474,9 @@ When the outcome is negative, it is considered a <em>female-favoured gap</em>.</
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cleaning">Cleaning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-descriptions">Variable descriptions</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregations">Aggregations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets-en-beschrijvingen">2.1 Datasets en beschrijvingen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datakwaliteit">2.2 Datakwaliteit</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-voorberwerking">2.3 Data voorberwerking</a></li>
 </ul>
   </nav></div>
 
