@@ -1,20 +1,20 @@
-function enforceLightMode() {
-  // Remove theme switcher, disallowing dark mode.
-  const switchButton = document.querySelector('.theme-switch-button');
-  if (typeof switchButton !== 'undefined') {
-    switchButton.remove();
+function lichtThemaAfdwingen() {
+  // Zoek en verwijder de schakelknop voor themawissel (indien aanwezig)
+  const themaKnop = document.querySelector('.theme-switch-button');
+  if (themaKnop) {
+    themaKnop.remove();
   }
 
-  // Enforce light mode, because that is when our story looks the best :)
-  if (document.querySelector('html').getAttribute('data-theme') !== 'light') {
-    // Switch theme right now.
-    document.querySelector('html').setAttribute('data-theme', 'light')
+  // Forceer licht thema als het nog niet actief is
+  const htmlElement = document.documentElement;
+  if (htmlElement.getAttribute('data-theme') !== 'light') {
+    htmlElement.setAttribute('data-theme', 'light');
 
-    // Set light mode to be permanent for future visits.
+    // Sla voorkeur op voor toekomstige bezoeken
     localStorage.setItem('mode', 'light');
     localStorage.setItem('theme', 'light');
-
   }
 }
 
-window.addEventListener('load', enforceLightMode);
+// Voer het script uit zodra de pagina volledig geladen is
+window.addEventListener('load', lichtThemaAfdwingen);

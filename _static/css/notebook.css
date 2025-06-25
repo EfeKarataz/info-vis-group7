@@ -45,6 +45,18 @@ code.literal {
   border: 1px solid #a0d8d3;
 }
 
+.bd-search .search-button:hover,
+.bd-search .search-button:focus {
+  border-color: #2ca8a0 !important;
+  box-shadow: none !important;
+}
+
+
+.tooltip {
+  background-color: #2e3d49 !important;
+  color: #ffffff !important;
+}
+
 @media (min-width: 992px) {
   .bd-sidebar-secondary {
     height: 100vh;
