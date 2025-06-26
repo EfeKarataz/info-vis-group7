@@ -13,4 +13,4 @@ Aan de hand van statistische analyses en datavisualisaties wordt onderzocht in w
 - Efe Karatas
 - Samim Amdam
 - Sharjeel Mohammad
-- Sunny Li
+- Zi Cheng Sunny Li
