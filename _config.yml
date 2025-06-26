@@ -42,6 +42,3 @@ sphinx:
         text/html: 1
         application/javascript: 2
         application/json: 3
-
-        - "application/javascript"
-        - "application/json"
