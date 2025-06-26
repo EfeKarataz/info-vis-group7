@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/css/notebook.css?v=3160a613" />
@@ -353,60 +353,40 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="theme">
 <h1>Theme<a class="headerlink" href="#theme" title="Link to this heading">#</a></h1>
-<p>The code below enables a custom theme which can be added to the top of each notebook by adding <code class="docutils literal notranslate"><span class="pre">%run</span> <span class="pre">set_theme.ipynb</span></code>, preferablly as the first cell to keep it consistent.</p>
+<p>De onderstaande code activeert een aangepast thema dat je bovenaan elk notebook kunt toevoegen door <code class="docutils literal notranslate"><span class="pre">%run</span> <span class="pre">set_theme.ipynb</span></code> toe te voegen, bij voorkeur als eerste cel om consistentie te behouden.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.io</span> <span class="k">as</span> <span class="nn">pio</span>
 
 <span class="k">if</span> <span class="s1">&#39;custom&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">pio</span><span class="o">.</span><span class="n">templates</span><span class="p">:</span>
     <span class="n">transparent</span> <span class="o">=</span> <span class="s1">&#39;rgba(0,0,0,0)&#39;</span>
-    <span class="n">bgcolor</span> <span class="o">=</span> <span class="s1">&#39;#fdead4&#39;</span>
-    <span class="n">black</span> <span class="o">=</span> <span class="s1">&#39;#343a42&#39;</span>
-    <span class="n">cyan</span> <span class="o">=</span> <span class="s1">&#39;#4edcda&#39;</span>
-    <span class="n">darkcyan</span> <span class="o">=</span> <span class="s1">&#39;#2b9694&#39;</span>
-    <span class="n">blue</span> <span class="o">=</span> <span class="s1">&#39;#4c75eb&#39;</span>
-    <span class="n">darkblue</span> <span class="o">=</span> <span class="s1">&#39;#3a34b5&#39;</span>
-    <span class="n">pink</span> <span class="o">=</span> <span class="s1">&#39;#ef4de5&#39;</span>
-    <span class="n">purple</span> <span class="o">=</span> <span class="s1">&#39;#a736a0&#39;</span>
-    <span class="n">red</span> <span class="o">=</span> <span class="s1">&#39;#f74e4e&#39;</span>
-    <span class="n">darkred</span> <span class="o">=</span> <span class="s1">&#39;#b33c3c&#39;</span>
-    <span class="n">green</span> <span class="o">=</span> <span class="s1">&#39;#2d8923&#39;</span>
-    <span class="n">darkgreen</span> <span class="o">=</span> <span class="s1">&#39;#2d8923&#39;</span>
-    <span class="n">orange</span> <span class="o">=</span> <span class="s1">&#39;#f7b24e&#39;</span>
-    <span class="n">brown</span> <span class="o">=</span> <span class="s1">&#39;#d8bea1&#39;</span>
+    <span class="n">bgcolor</span> <span class="o">=</span> <span class="s1">&#39;#ffffff&#39;</span>  <span class="c1"># Witte achtergrond</span>
+    <span class="n">black</span> <span class="o">=</span> <span class="s1">&#39;#2e3d49&#39;</span>    <span class="c1"># Donkere tekstkleur uit headers</span>
+    <span class="n">teal</span> <span class="o">=</span> <span class="s1">&#39;#2ca8a0&#39;</span>     <span class="c1"># Primaire kleur voor links, TOC, en interactie</span>
+    <span class="n">light_teal</span> <span class="o">=</span> <span class="s1">&#39;#a0d8d3&#39;</span>  <span class="c1"># Randkleur van code en logo</span>
+    <span class="n">code_bg</span> <span class="o">=</span> <span class="s1">&#39;#e0f7f4&#39;</span>  <span class="c1"># Achtergrondkleur van code</span>
+    <span class="n">hover</span> <span class="o">=</span> <span class="s1">&#39;#2ca8a0&#39;</span>    <span class="c1"># Hoverkleur (zelfde als teal)</span>
 
     <span class="n">pio</span><span class="o">.</span><span class="n">templates</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pio</span><span class="o">.</span><span class="n">templates</span><span class="p">[</span><span class="s1">&#39;plotly&#39;</span><span class="p">]</span>
 
     <span class="n">pio</span><span class="o">.</span><span class="n">templates</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
-        <span class="s1">&#39;data&#39;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s1">&#39;bar&#39;</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="s1">&#39;marker&#39;</span><span class="p">:</span> <span class="p">{</span>
-                        <span class="s1">&#39;line&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;width&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span>
-                    <span class="p">}</span>
-                <span class="p">}</span>
-            <span class="p">]</span>
-        <span class="p">},</span>
         <span class="s1">&#39;layout&#39;</span><span class="p">:</span> <span class="p">{</span>
             <span class="s1">&#39;paper_bgcolor&#39;</span><span class="p">:</span> <span class="n">bgcolor</span><span class="p">,</span>
             <span class="s1">&#39;plot_bgcolor&#39;</span><span class="p">:</span> <span class="n">transparent</span><span class="p">,</span>
             <span class="s1">&#39;font&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="n">black</span><span class="p">},</span>
             <span class="s1">&#39;xaxis&#39;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s1">&#39;zerolinecolor&#39;</span><span class="p">:</span> <span class="n">brown</span><span class="p">,</span>
-                <span class="s1">&#39;gridcolor&#39;</span><span class="p">:</span> <span class="n">brown</span><span class="p">,</span>
+                <span class="s1">&#39;zerolinecolor&#39;</span><span class="p">:</span> <span class="n">light_teal</span><span class="p">,</span>
+                <span class="s1">&#39;gridcolor&#39;</span><span class="p">:</span> <span class="n">light_teal</span><span class="p">,</span>
                 <span class="s1">&#39;zerolinewidth&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
             <span class="p">},</span>
             <span class="s1">&#39;yaxis&#39;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s1">&#39;zerolinecolor&#39;</span><span class="p">:</span> <span class="n">brown</span><span class="p">,</span>
-                <span class="s1">&#39;gridcolor&#39;</span><span class="p">:</span> <span class="n">brown</span><span class="p">,</span>
+                <span class="s1">&#39;zerolinecolor&#39;</span><span class="p">:</span> <span class="n">light_teal</span><span class="p">,</span>
+                <span class="s1">&#39;gridcolor&#39;</span><span class="p">:</span> <span class="n">light_teal</span><span class="p">,</span>
                 <span class="s1">&#39;zerolinewidth&#39;</span><span class="p">:</span> <span class="mi">1</span>
-            <span class="p">},</span>    
-           <span class="s1">&#39;colorway&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">black</span><span class="p">,</span> 
-                        <span class="n">cyan</span><span class="p">,</span>     <span class="n">blue</span><span class="p">,</span>     <span class="n">pink</span><span class="p">,</span>   <span class="n">red</span><span class="p">,</span>     <span class="n">green</span><span class="p">,</span>     <span class="n">orange</span><span class="p">,</span>
-                        <span class="n">darkcyan</span><span class="p">,</span> <span class="n">darkblue</span><span class="p">,</span> <span class="n">purple</span><span class="p">,</span> <span class="n">darkred</span><span class="p">,</span> <span class="n">darkgreen</span><span class="p">],</span>
+            <span class="p">},</span>
+            <span class="s1">&#39;colorway&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">teal</span><span class="p">,</span> <span class="n">black</span><span class="p">,</span> <span class="n">light_teal</span><span class="p">],</span>
             <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">},</span>
             <span class="s1">&#39;annotationdefaults&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;arrowcolor&#39;</span><span class="p">:</span> <span class="n">black</span><span class="p">},</span>
-
         <span class="p">}</span>
     <span class="p">})</span>
 
