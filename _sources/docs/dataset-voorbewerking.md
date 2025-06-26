@@ -1,6 +1,6 @@
-### Dataset en Voorbewerking
+## Dataset en Voorbewerking
 
-#### Datasets en beschrijvingen
+### Datasets en beschrijvingen
 
 Om de onderzoeksvraag te beantwoorden, zijn drie datasets geanalyseerd. Deze bevatten informatie over studenten, hun gamegedrag, studiegedrag en prestaties. Denk aan speeltijd, voorbereiding op examens en cijfers. Dankzij deze variatie kunnen we het onderwerp vanuit verschillende invalshoeken bekijken. De drie datasets volgen hieronder.
 
@@ -20,7 +20,7 @@ kenmerken van studenten in het hoger onderwijs. De dataset bevat onder andere de
 - *Beschrijving*: Deze dataset bestaat uit 770 observaties met variabelen als Playing Hours (aantal uren gamen per dag), Playing Years (hoeveel jaar iemand al games speelt) en Playing Often (hoevaak iemand games speelt op een schaal van 0-5). Beide zijn beschikbaar en daarmee geschikt voor correlatieanalyse. Het doel van de dataset is om factoren te
 identificeren die een positieve of negatieve invloed hebben op academisch succes.
 
-#### Datakwaliteit
+### Datakwaliteit
 
 We hebben alle datasets zorgvuldig gecontroleerd op de vijf kernaspecten van datakwaliteit:
 - Nauwkeurigheid: Alle waarden in bijvoorbeeld Playing Hours en Playing Years vallen binnen logische grenzen (respectievelijk 0–5 uur en 0–4 jaar).
@@ -29,5 +29,5 @@ We hebben alle datasets zorgvuldig gecontroleerd op de vijf kernaspecten van dat
 - Consistentie: De categorieën zijn gestandaardiseerd en waar nodig omgezet naar ordinale getallen om statistische verwerking mogelijk te maken.
 - Uniqueness: Er zijn geen dubbele records binnen de gebruikte subsets.
 
-#### Data voorberwerking
+### Data voorberwerking
 De drie datasets zijn ingeladen in Python met behulp van pandas. CSV-bestanden zijn geopend met pd.read_csv() en werden direct ingelezen in DataFrames. Daarnaast zijn categorische variabelen zijn omgezet naar numerieke schalen om statistische analyses mogelijk te maken, zoals het berekenen van gemiddelden en correlaties. Deze werden verwerkt met de visualisatietool plotly.

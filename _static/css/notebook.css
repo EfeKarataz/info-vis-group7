@@ -1,62 +1,73 @@
+/* Verberg de knop voor het wisselen van thema */
 .theme-switch-button {
   display: none !important;
 }
 
+/* Sidebar onderin geen extra marge */
 .bd-sidebar-primary .sidebar-primary-items__end {
   margin-top: 0;
 }
 
-.bd-article-container h1,
-.bd-article-container h2 {
+/* Koppen donkerder maken */
+.bd-article-container :is(h1, h2) {
   color: #2e3d49;
 }
 
+/* Sidebar navigatie aanpassen */
 nav.bd-links {
   margin-right: 0;
 }
 
+/* Actieve TOC-lijnkleur links */
 .toc-entry a.nav-link.active {
   border-left-color: #2ca8a0;
 }
 
-a,
-a:hover,
-a:focus,
-.prev-next-area a p.prev-next-title,
-.toc-entry a.nav-link:hover,
-.toc-entry a.nav-link.active,
-nav.bd-links .active:hover > a,
-nav.bd-links .active:focus > a,
-nav.bd-links .active > a,
-nav.bd-links li > a:hover,
-nav.bd-links li > a:focus {
+/* Linkstijlen en hover-effecten in hele site */
+:is(a, 
+  .prev-next-area a p.prev-next-title,
+  .toc-entry a.nav-link:hover,
+  .toc-entry a.nav-link.active,
+  nav.bd-links .active > a,
+  nav.bd-links li > a:hover,
+  nav.bd-links li > a:focus) {
   color: #2ca8a0;
 }
 
+a:hover,
+a:focus,
+nav.bd-links .active:hover > a,
+nav.bd-links .active:focus > a {
+  color: #2ca8a0;
+}
+
+/* Code-element stijl */
 code.literal {
   background-color: #e0f7f4;
   color: #2e3d49;
   border: 1px solid #a0d8d3;
 }
 
+/* Logo stijl */
 .logo__image {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   border: 1px solid #a0d8d3;
 }
 
-.bd-search .search-button:hover,
-.bd-search .search-button:focus {
+/* Zoekbalk hoverkleur in eigen stijl */
+.bd-search .search-button:is(:hover, :focus) {
   border-color: #2ca8a0 !important;
   box-shadow: none !important;
 }
 
-
+/* Tooltip stijl */
 .tooltip {
   background-color: #2e3d49 !important;
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
+/* Fix hoogte secundaire zijbalk op grotere schermen */
 @media (min-width: 992px) {
   .bd-sidebar-secondary {
     height: 100vh;
