@@ -26,7 +26,6 @@ repository:
 
 sphinx:
   extra_extensions:
-    # This is to work around the bug of no syntax highlighting
     - "IPython.sphinxext.ipython_console_highlighting"
   config:
     html_context:
@@ -37,10 +36,12 @@ sphinx:
     html_js_files:
       - js/enforce-light-theme.js
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
-
-    nb_render_priority:
+    nb_mime_priority_overrides:
       html:
-        - "application/vnd.plotly.v1+json"
-        - "text/html"
+        application/vnd.plotly.v1+json: 0
+        text/html: 1
+        application/javascript: 2
+        application/json: 3
+
         - "application/javascript"
         - "application/json"
