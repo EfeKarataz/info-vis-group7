@@ -36,6 +36,11 @@ sphinx:
       - css/notebook.css
     html_js_files:
       - js/enforce-light-theme.js
-
-      # This is for plotly to work
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+
+    nb_render_priority:
+      html:
+        - "application/vnd.plotly.v1+json"
+        - "text/html"
+        - "application/javascript"
+        - "application/json"
