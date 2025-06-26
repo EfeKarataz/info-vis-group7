@@ -37,9 +37,8 @@ sphinx:
       - js/enforce-light-theme.js
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     nb_mime_priority_overrides:
-      - format: html
-        priority:
-          - text/html
-          - application/javascript
-          - application/json
-
+    - format: html
+      priority:
+        - text/html
+        - application/javascript
+        - application/json
