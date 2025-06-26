@@ -37,8 +37,9 @@ sphinx:
       - js/enforce-light-theme.js
       - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     nb_mime_priority_overrides:
-      html:
-        application/vnd.plotly.v1+json: 0
-        text/html: 1
-        application/javascript: 2
-        application/json: 3
+      - format: html
+        priority:
+          - text/html
+          - application/javascript
+          - application/json
+
