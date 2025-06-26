@@ -360,12 +360,11 @@ document.write(`
 
 <span class="k">if</span> <span class="s1">&#39;custom&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">pio</span><span class="o">.</span><span class="n">templates</span><span class="p">:</span>
     <span class="n">transparent</span> <span class="o">=</span> <span class="s1">&#39;rgba(0,0,0,0)&#39;</span>
-    <span class="n">bgcolor</span> <span class="o">=</span> <span class="s1">&#39;#ffffff&#39;</span>  <span class="c1"># Witte achtergrond</span>
-    <span class="n">black</span> <span class="o">=</span> <span class="s1">&#39;#2e3d49&#39;</span>    <span class="c1"># Donkere tekstkleur uit headers</span>
-    <span class="n">teal</span> <span class="o">=</span> <span class="s1">&#39;#2ca8a0&#39;</span>     <span class="c1"># Primaire kleur voor links, TOC, en interactie</span>
-    <span class="n">light_teal</span> <span class="o">=</span> <span class="s1">&#39;#a0d8d3&#39;</span>  <span class="c1"># Randkleur van code en logo</span>
-    <span class="n">code_bg</span> <span class="o">=</span> <span class="s1">&#39;#e0f7f4&#39;</span>  <span class="c1"># Achtergrondkleur van code</span>
-    <span class="n">hover</span> <span class="o">=</span> <span class="s1">&#39;#2ca8a0&#39;</span>    <span class="c1"># Hoverkleur (zelfde als teal)</span>
+    <span class="n">bgcolor</span> <span class="o">=</span> <span class="s1">&#39;#ffffff&#39;</span>      <span class="c1"># Witte achtergrond</span>
+    <span class="n">black</span> <span class="o">=</span> <span class="s1">&#39;#2e3d49&#39;</span>        <span class="c1"># Donkere tekstkleur</span>
+    <span class="n">teal</span> <span class="o">=</span> <span class="s1">&#39;#2ca8a0&#39;</span>         <span class="c1"># Primaire kleur (links, hover)</span>
+    <span class="n">soft_blue</span> <span class="o">=</span> <span class="s1">&#39;#bcdffb&#39;</span>    <span class="c1"># NIEUWE zachte blauwe kleur voor randen</span>
+    <span class="n">code_bg</span> <span class="o">=</span> <span class="s1">&#39;#e0f7f4&#39;</span>      <span class="c1"># Achtergrondkleur van codeblokken</span>
 
     <span class="n">pio</span><span class="o">.</span><span class="n">templates</span><span class="p">[</span><span class="s1">&#39;custom&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pio</span><span class="o">.</span><span class="n">templates</span><span class="p">[</span><span class="s1">&#39;plotly&#39;</span><span class="p">]</span>
 
@@ -375,16 +374,16 @@ document.write(`
             <span class="s1">&#39;plot_bgcolor&#39;</span><span class="p">:</span> <span class="n">transparent</span><span class="p">,</span>
             <span class="s1">&#39;font&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="n">black</span><span class="p">},</span>
             <span class="s1">&#39;xaxis&#39;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s1">&#39;zerolinecolor&#39;</span><span class="p">:</span> <span class="n">light_teal</span><span class="p">,</span>
-                <span class="s1">&#39;gridcolor&#39;</span><span class="p">:</span> <span class="n">light_teal</span><span class="p">,</span>
+                <span class="s1">&#39;zerolinecolor&#39;</span><span class="p">:</span> <span class="n">soft_blue</span><span class="p">,</span>
+                <span class="s1">&#39;gridcolor&#39;</span><span class="p">:</span> <span class="n">soft_blue</span><span class="p">,</span>
                 <span class="s1">&#39;zerolinewidth&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
             <span class="p">},</span>
             <span class="s1">&#39;yaxis&#39;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="s1">&#39;zerolinecolor&#39;</span><span class="p">:</span> <span class="n">light_teal</span><span class="p">,</span>
-                <span class="s1">&#39;gridcolor&#39;</span><span class="p">:</span> <span class="n">light_teal</span><span class="p">,</span>
+                <span class="s1">&#39;zerolinecolor&#39;</span><span class="p">:</span> <span class="n">soft_blue</span><span class="p">,</span>
+                <span class="s1">&#39;gridcolor&#39;</span><span class="p">:</span> <span class="n">soft_blue</span><span class="p">,</span>
                 <span class="s1">&#39;zerolinewidth&#39;</span><span class="p">:</span> <span class="mi">1</span>
             <span class="p">},</span>
-            <span class="s1">&#39;colorway&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">teal</span><span class="p">,</span> <span class="n">black</span><span class="p">,</span> <span class="n">light_teal</span><span class="p">],</span>
+            <span class="s1">&#39;colorway&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">teal</span><span class="p">,</span> <span class="n">black</span><span class="p">,</span> <span class="n">soft_blue</span><span class="p">],</span>
             <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">},</span>
             <span class="s1">&#39;annotationdefaults&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;arrowcolor&#39;</span><span class="p">:</span> <span class="n">black</span><span class="p">},</span>
         <span class="p">}</span>
