@@ -10,7 +10,7 @@ Aan de hand van statistische analyses en datavisualisaties wordt onderzocht in w
 
 **Auteurs**
 
-- Efe Karatas
+- Efe Karataş
 - Samim Amdam
 - Sharjeel Mohammad
 - Zi Cheng Sunny Li
