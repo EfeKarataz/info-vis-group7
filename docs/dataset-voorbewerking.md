@@ -12,12 +12,12 @@ schoolprestaties van studenten beïnvloeden. De dataset bevat informatie over st
 
 2. *Student Performance Metrics Dataset*
 - *Bron*: https://data.mendeley.com/datasets/5b82ytz489/1
-- *Beschrijving*: Deze dataset heeft 493 observaties en bevat uitgebreide informatie over academische en niet-academische
+- *Beschrijving*: Deze dataset heeft 493 observaties en 16 variabelen. Het bevat uitgebreide informatie over academische en niet-academische
 kenmerken van studenten in het hoger onderwijs. De dataset bevat onder andere de variabelen Gaming, Attendance en Preparation in ordinale categorieën zoals "0-1 Hour" en "More than 3 Hours". Dit stelt ons in staat om verschillen in studiegedrag tussen studenten inzichtelijk te maken.
 
 3. *Games and Success in Students*
 - *Bron*: https://www.kaggle.com/datasets/deadier/play-games-and-success-in-students
-- *Beschrijving*: Deze dataset bestaat uit 770 observaties met variabelen als Playing Hours (aantal uren gamen per dag), Playing Years (hoeveel jaar iemand al games speelt) en Playing Often (hoevaak iemand games speelt op een schaal van 0-5). Beide zijn beschikbaar en daarmee geschikt voor correlatieanalyse. Het doel van de dataset is om factoren te
+- *Beschrijving*: Deze dataset bestaat uit 770 observaties en 10 variabelen met variabelen als Playing Hours (aantal uren gamen per dag), Playing Years (hoeveel jaar iemand al games speelt) en Playing Often (hoevaak iemand games speelt op een schaal van 0-5). Beide zijn beschikbaar en daarmee geschikt voor correlatieanalyse. Het doel van de dataset is om factoren te
 identificeren die een positieve of negatieve invloed hebben op academisch succes.
 
 ### Datakwaliteit
@@ -30,4 +30,4 @@ We hebben alle datasets zorgvuldig gecontroleerd op de vijf kernaspecten van dat
 - Uniqueness: Er zijn geen dubbele records binnen de gebruikte subsets.
 
 ### Data voorberwerking
-De drie datasets zijn ingeladen in Python met behulp van pandas. CSV-bestanden zijn geopend met pd.read_csv() en werden direct ingelezen in DataFrames. Daarnaast zijn categorische variabelen zijn omgezet naar numerieke schalen om statistische analyses mogelijk te maken, zoals het berekenen van gemiddelden en correlaties. Deze werden verwerkt met de visualisatietool plotly.
+De drie datasets zijn ingeladen in Python met behulp van pandas. CSV-bestanden zijn geopend met pd.read_csv() en werden direct ingelezen in DataFrames. Daarnaast zijn categorische variabelen omgezet naar numerieke schalen om statistische analyses mogelijk te maken, zoals het berekenen van gemiddelden en correlaties. Deze werden verwerkt met de visualisatietool plotly.
